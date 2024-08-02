@@ -2,7 +2,7 @@ package v1
 
 import (
 	"MengCDN/internal/middleware"
-	"MengCDN/model"
+	"MengCDN/internal/model"
 	"MengCDN/internal/tools/errmsg"
 	"github.com/gin-gonic/gin"
 	"net/http"
