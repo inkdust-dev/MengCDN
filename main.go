@@ -12,8 +12,8 @@ func Handler(w http.ResponseWriter, r *http.Request) {
     model.InitDB()
 
     // 初始化路由
-    router := router.InitRouter()
+    r := router.InitRouter()
 
     // 使用路由处理请求
-    router.ServeHTTP(w, r)
+    r.ServeHTTP(w, r)
 }

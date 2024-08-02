@@ -6,11 +6,14 @@ import (
     "net/http"
 )
 
+// Handler 是 Vercel 函数处理器
 func Handler(w http.ResponseWriter, r *http.Request) {
-    // 初始化数据库和路由
+    // 初始化数据库
     model.InitDB()
-    r := router.InitRouter()
+
+    // 初始化路由
+    router := router.InitRouter()
 
     // 使用路由处理请求
-    r.ServeHTTP(w, r)
+    router.ServeHTTP(w, r)
 }
