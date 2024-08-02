@@ -1,13 +1,16 @@
-package main
+package handler
 
 import (
-	"MengCDN/internal/model"
-	"MengCDN/internal/router"
+    "MengCDN/internal/model"
+    "MengCDN/internal/router"
+    "net/http"
 )
 
-func main() {
+func Handler(w http.ResponseWriter, r *http.Request) {
+    // 初始化数据库和路由
+    model.InitDB()
+    r := router.InitRouter()
 
-	model.InitDB()
-	router.InitRouter()
-
+    // 使用路由处理请求
+    r.ServeHTTP(w, r)
 }
