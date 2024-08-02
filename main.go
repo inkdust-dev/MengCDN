@@ -1,8 +1,8 @@
 package handler
 
 import (
-    "MengCDN/internal/model"
-    "MengCDN/internal/router"
+    "MengCDN/model"
+    "MengCDN/router"
     "net/http"
 )
 
