@@ -6,7 +6,6 @@ import (
 	"MengCDN/internal/service"
 	"github.com/gin-contrib/multitemplate"
 	"github.com/gin-gonic/gin"
-	"io/fs"
 	"net/http"
 )
 
