@@ -1,6 +1,6 @@
 module MengCDN
 
-go 1.21rc3
+go 1.21.10
 
 require (
 	github.com/bytedance/sonic v1.10.0-rc3 // indirect
